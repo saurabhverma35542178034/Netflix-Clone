@@ -63,3 +63,7 @@ background: #6d6d6eb3;
 .hero-btns .dark-btn:hover{
     background: #fafafcb3;
 }
+
+.more-cards{
+    padding-left: 6%;
+}
