@@ -33,14 +33,33 @@ margin-bottom: 30px;
 
 .hero-btns .btn img{
 width: 25px;
+color: black;
 }
-.hero-bts .btnf{
-border: 0; outline: 0;
-padding: 8px 20px; display: inline-flex; align-items: center;
+.info-icon{
+  filter: brightness(0);
+}
+.hero-btns .btn{
+border: 0; 
+outline: 0;
+padding: 8px 20px; 
+display: inline-flex; 
+align-items: center;
 gap:10px;
 font-size: 15px;
  font-weight: 600; 
  background: white; 
  border-radius: 4px; 
  cursor: pointer;
+}
+.hero-btns .btn.dark-btn{
+color: #fff;
+background: #6d6d6eb3;
+}
+
+.hero-btns .btn:hover{
+    background: #ffffffbf;
+}
+
+.hero-btns .dark-btn:hover{
+    background: #fafafcb3;
 }
