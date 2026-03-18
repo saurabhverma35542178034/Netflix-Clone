@@ -7,7 +7,19 @@ import play_icon from '../../assets/play_icon.png'
 import info_icon from '../../assets/info_icon.png'
 import TitleCards from '../../components/TitleCards/TitleCards'
 import Footer from '../../components/Footer/Footer'
-const home = () => {
+import { useEffect, useState } from 'react'
+const Home = () => {
+
+const [apiData, setApiData] = useState(null);
+
+  useEffect(() => {
+    console.log("FETCH CALLED"); 
+
+    fetch('http://www.omdbapi.com/?i=tt3896198&apikey=62b816d8')
+      .then(res => res.json())
+      .then(data => setApiData(data));
+  }, []);
+
   return (
     <div className='home'>
           <Navbar />
@@ -37,4 +49,4 @@ const home = () => {
   )
 }
 
-export default home
+export default Home
